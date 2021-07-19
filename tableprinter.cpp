@@ -224,6 +224,7 @@ bool TablePrinter::printTable(const QAbstractItemModel* model, const QVector<int
 
     painter->translate(0, max_y);
 
+    painter->translate(0, y - painter->transform().dy());
     return true;
 }
 
